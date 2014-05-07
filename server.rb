@@ -29,7 +29,7 @@ post '/save' do
 	redirect to '/'
 end
 
-get 'show/:id' do
+get '/show/:id' do
 	@item = nil
 	expenses.each do |i|
 		if (i.id == params[:id])
