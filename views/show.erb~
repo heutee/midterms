@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>ITEM</h1>
+		<p>ID: <%= @item.id %>
+			</br>ITEM NAME: <%= @item.item %>
+			</br>ITEM AMOUNT: <%= @item.amount %>
+		</p>
+	</body>
+</html>

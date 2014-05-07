@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>EXPENSES</h1>
+		<ul>
+  		<% @expenses.each do |i| %>
+      	<li><%= i.item %><a href="/show/<%= i.id%>">Show Item</a></li>
+		<%= end %>
+		</ul>
+		
+		</br></br>TOTAL EXPENSES: <%= @expenses.each do |i| 
+											 total += i.amount
+											 end 
+											 return total %>
+		</br></br><a href="/new">New Item</a>
+	</body>
+</html>
