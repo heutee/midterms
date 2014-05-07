@@ -4,8 +4,17 @@ require './expense'
 expenses = []
 id_counter = 1
 
+def total(array)
+	result = 0.0
+	array.each do |i| 
+		result += i.amount
+	end
+	return result
+end
+
 get '/' do
 	@expenses = expenses
+	@total_amount = total(expenses)
 	erb :index
 end
 
