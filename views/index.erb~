@@ -7,7 +7,7 @@
 		<h1>EXPENSES</h1>
 		<ul>
   		<% @expenses.each do |i| %>
-      	<li><%= i.item %>&nsbp;<a href="/show/<%= i.id%>">Show Item</a></li>
+      	<li><%= i.item %>&nbsp;<a href="/show/<%= i.id%>">Show Item</a></li>
 		<% end %>
 		</ul>
 		

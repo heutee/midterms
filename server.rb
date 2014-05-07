@@ -30,7 +30,6 @@ post '/save' do
 end
 
 get '/show/:id' do
-	@item = nil
 	expenses.each do |i|
 		if (i.id == params[:id])
 			@item = i
